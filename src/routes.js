@@ -11,7 +11,7 @@ export default function Routes() {
     return (
         <Router>
             <Switch>
-                <Route path="/" component={HomePage} />
+                <Route path="/" exact  component={HomePage}/>
             </Switch>
         </Router>
     )
