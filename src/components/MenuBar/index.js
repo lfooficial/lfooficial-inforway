@@ -15,19 +15,19 @@ export default function MenuBar() {
             <MenusLink>
                 <MenuLink>
                     <HomeIcon />
-                    HOME
+                    <p>HOME</p>
                 </MenuLink>
                 <MenuLink>
                     <PlanosIcon />
-                    PLANOS
+                    <p>PLANOS</p>
                 </MenuLink>
                 <MenuLink>
                     <ChatIcon />
-                    ATENDIMENTO
+                    <p>ATENDIMENTO</p>
                 </MenuLink>
                 <MenuLink>
                     <AreaUserIcon />
-                    ÁREA DO CLIENTE
+                    <p>ÁREA DO CLIENTE</p>
                 </MenuLink>
             </MenusLink>
         </Container>

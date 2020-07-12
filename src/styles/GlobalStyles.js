@@ -25,6 +25,7 @@ export default createGlobalStyle`
     
     :root{
       --search: #202327;
+      --black: #000;
       --white: #D9D9D9;
       --gray: #7A7A7A;
       --outline: #2F3336;
