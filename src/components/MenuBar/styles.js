@@ -71,11 +71,11 @@ p{
     }
 }
 @media(min-width: 750px){
-    p{font-size: 18px;}
+    p{font-size: 15px;}
 }
 
 @media(min-width: 1000px){
-    p{font-size: 25px;}
+    p{font-size: 23px;}
 }
 `;
 

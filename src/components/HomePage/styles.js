@@ -9,4 +9,20 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  @media(min-width: 500px){
+      margin-top: 42px;
+  }
+`
+
+export const Main = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--whiteGround);
+  
+  width: min(601px, 100%);
+  @media (min-width: 500px) {
+    border-left: 1px solid var(--outline);
+    border-right: 1px solid var(--outline);
+  }
 `
