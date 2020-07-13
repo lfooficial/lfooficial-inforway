@@ -8,7 +8,7 @@ export default createGlobalStyle`
     }
 
     html{
-      background: var(--white);
+      background: var(--whiteGround);
     }
 
     html, body, #root{

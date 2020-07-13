@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  background: var(--white);
+  background: var(--whiteGround);
 `
 export const Wrapper = styled.div`
   height: 100%;

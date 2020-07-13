@@ -10,6 +10,7 @@ import {
     Wrapper,
     Main,
 } from './styles'
+import SideBar from '../SideBar'
 
 
 export default function HomePage() {
@@ -47,6 +48,7 @@ export default function HomePage() {
                 <Main>
                     <RoutesMain />
                 </Main>
+                <SideBar />
             </Wrapper>
         </Container>
     )
