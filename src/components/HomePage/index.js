@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import RoutesMain from '../../routes-main'
 
 import MenuBar from '../MenuBar'
@@ -13,14 +13,38 @@ import {
 
 
 export default function HomePage() {
+
+    const [state, setState] = useState(false)
+    const [active, setActive] = useState(true)
+    const [deactive, setDeactive] = useState(false)
+
+
+    const activeMenu = () => {
+
+        if (state) {
+            setActive(true)
+            setDeactive(false)
+        } else {
+            setActive(false)
+            setDeactive(true)
+        }
+        setState(!state)
+    }
+
     return (
         <Container>
             <Header />
-            <MenuBar />
+            <MenuBar
+                active={active}
+                deactive={deactive}
+                activeMenu={(state) => activeMenu(state)}
+            />
             <Wrapper>
-                <NavBar />
+                <NavBar
+                    status={deactive}
+                />
                 <Main>
-                   <RoutesMain />
+                    <RoutesMain />
                 </Main>
             </Wrapper>
         </Container>

@@ -1,23 +1,29 @@
-import styled, {css} from 'styled-components'
+import styled, { css } from 'styled-components'
 import {
     PackageIcon,
-    SettingsInputAntenna,
-    ArrowLeft
-}from '../../styles/Icon'
+    SettingsInputAntenna
+} from '../../styles/Icon'
 
 export const Container = styled.div`
-display: none;
-@media(min-width: 500px){
-  display: flex;
+  width: 100%;
+  display: ${props => props.status ? "inline": "none"};
   flex-direction: column;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
+  position: absolute;
+  top: 110px;
   left: 0;
+  z-index: 1;
   padding: 9px 19px 20px;
   max-height: 100vh;
   overflow-y: auto; 
   background: var(--whiteGround);
+@media(min-width: 500px){
+    width: unset;
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: unset;
 }
 `
 
@@ -26,6 +32,12 @@ export const TopSide = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
+align-items: flex-start;
+a{
+  text-decoration: none;
+  list-style: none;
+  color: var(--black);
+}
 @media(min-width: 1280px){
   align-items: flex-start;
 }
@@ -34,15 +46,16 @@ export const MenuButton = styled.div`
 display:  flex;
 align-items: center;
 flex-shrink: 0;
->span{
-  display: none;
+span{
+  display: ${props => props.status ? "inline": "none"};
+  margin-left: 19px;
+    font-weight: bold;
+  font-size: 19px;
 }
 @media(min-width: 1280px){
-  >span{
+  span{
     display:  inline;
-    margin-left: 19px;
-    font-weight: bold;
-    font-size: 19px;
+    
   }
   padding-right: 15px;
 }
@@ -50,21 +63,6 @@ padding: 8.25px 0;
 outline: 0;
 & + button{
   margin-top: 16.5px;
-}
-& + button:last-child{
-  margin-top: 33px;
-  width: 40px;
-  height: 40px;
-  >span{
-    display: none;
-  }
-  @media(min-width: 1280px){
-    width: 100%;
-    height: unset;
-    >span{
-      display: inline;
-    }
-  }
 }
 cursor: pointer;
 border-radius: 25px;
@@ -87,31 +85,7 @@ width: 30px;
 height: 30px;
 color: var(--black);
 `
-    
-export const PackIcon = styled(PackageIcon)`${iconCSS}`
-    
-export const AntenaIcon = styled(SettingsInputAntenna)`${iconCSS}`
 
-export const BotSide = styled.div`
-margin-top: 20px;
-display:  flex;
-align-items: center;
-`
-    
-export const ArrowLeftIcon = styled(ArrowLeft)`
-display: none;
-@media(max-width: 500px){
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  color: var(--black);
-  margin-left: 30px;
-  cursor: pointer;
-  &:hover{
-    >path{
-      color: var(--site);
-    }
-  }
-}
-`
-    
+export const PackIcon = styled(PackageIcon)`${iconCSS}`
+
+export const AntenaIcon = styled(SettingsInputAntenna)`${iconCSS}`

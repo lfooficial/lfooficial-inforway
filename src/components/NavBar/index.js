@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 import {
     Container,
@@ -6,27 +7,25 @@ import {
     MenuButton,
     PackIcon,
     AntenaIcon,
-    BotSide,
-    ArrowLeftIcon,
 } from './styles'
 
-export default function NavBar() {
+export default function NavBar(props) {
     return (
-        <Container>
+        <Container status={props.status}>
             <TopSide>
-                <MenuButton>
+                <Link><MenuButton
+                status={props.status}
+                >
                     <PackIcon />
                     <span>Planos de Acesso</span>
-                </MenuButton>
-                <MenuButton>
+                </MenuButton></Link>
+                <Link><MenuButton
+                status={props.status}
+                >
                     <AntenaIcon />
                     <span>Área de Cobertura</span>
-                </MenuButton>
-                
+                </MenuButton></Link>
             </TopSide>
-            <BotSide>
-                <ArrowLeftIcon />
-            </BotSide>
         </Container>
     )
 }

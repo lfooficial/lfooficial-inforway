@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React from 'react'
+
 import { 
     Container,
     MenusLink,
@@ -12,28 +13,15 @@ import {
     AreaUserIcon,
  } from './styles'
 
-export default function MenuBar() {
-    const [state, setState] = useState(false)
-    const [active, setActive] = useState(true)
-    const [deactive, setDeactive] = useState(false)
-    const activeMenu = () => {
-        if(state){
-            setActive(true)
-            setDeactive(false)
-        }else{
-            setActive(false)
-            setDeactive(true)
-        }
-        setState(!state)
-    }
+export default function MenuBar(props) {
 
     return (
         <Container>
             <MenusLink>
                 <MenuLink>
-                    <Menus inline={[active, deactive]}>
-                        <button className="active" onClick={activeMenu}><MenuIcon/></button>
-                        <button className="deactive" onClick={activeMenu}><ArrowLeftIcon/></button>
+                    <Menus inline={[props.active, props.deactive]}>
+                        <button className="active" onClick={props.activeMenu}><MenuIcon/></button>
+                        <button className="deactive" onClick={props.activeMenu}><ArrowLeftIcon/></button>
                     </Menus>
                      </MenuLink>
                 <MenuLink>

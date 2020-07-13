@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  position: relative;
   @media(min-width: 500px){
       margin-top: 152px;
   }
