@@ -11,9 +11,11 @@ import {
 export default function HomePage() {
     return (
         <Container>
+            <Header />
+            <MenuBar />
             <Wrapper>
-                <Header />
-                <MenuBar />
+                
+                
             </Wrapper>
         </Container>
     )

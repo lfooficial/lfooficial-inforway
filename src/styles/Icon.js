@@ -15,3 +15,4 @@ export {
     Chat,
     User
 } from 'styled-icons/boxicons-solid'
+export {Menu} from 'styled-icons/entypo'

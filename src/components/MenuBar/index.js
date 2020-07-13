@@ -3,6 +3,7 @@ import {
     Container,
     MenusLink,
     MenuLink,
+    MenuIcon,
     HomeIcon,
     PlanosIcon,
     ChatIcon,
@@ -13,6 +14,9 @@ export default function MenuBar() {
     return (
         <Container>
             <MenusLink>
+                <MenuLink>
+                    <MenuIcon />
+                </MenuLink>
                 <MenuLink>
                     <HomeIcon />
                     <p>HOME</p>

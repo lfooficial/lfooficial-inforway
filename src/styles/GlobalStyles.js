@@ -27,6 +27,7 @@ export default createGlobalStyle`
       --search: #202327;
       --black: #000;
       --white: #D9D9D9;
+      --whiteGround: #FFF;
       --gray: #7A7A7A;
       --outline: #2F3336;
       --retweet: #00C06B;

@@ -4,7 +4,8 @@ import {
     Home,
     BookOpen,
     Chat,
-    User
+    User,
+    Menu
 } from '../../styles/Icon'
 
 export const Container = styled.div`
@@ -15,12 +16,12 @@ export const Container = styled.div`
   bottom: 0;
   left: 0;
   z-index: 2;
-  background: var(--black);
+  background: var(--whiteGround);
   width: 100%;
-  border-top: 2px solid var(--outline);
+  border-top: 1px solid var(--outline);
   @media(min-width: 500px){
       bottom: unset;
-      top: 0;
+      top: 110px;
   }
 `
 
@@ -45,10 +46,14 @@ export const MenusLink = styled.div`
 
 export const MenuLink = styled.div`
 @media(min-width: 500px){
+    &:first-child{
+        display: none;
+    }
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     p{
       display: inline;
       color: var(--site);
@@ -69,10 +74,11 @@ export const MenuLink = styled.div`
 `;
 
 const iconCSS = css`
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   fill: var(--site);
 `;
+export const MenuIcon = styled(Menu)`${iconCSS}`
 
 export const HomeIcon = styled(Home)`${iconCSS}`
 
