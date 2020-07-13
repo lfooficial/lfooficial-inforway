@@ -38,6 +38,7 @@ a{
   list-style: none;
   color: var(--black);
 }
+
 @media(min-width: 1280px){
   align-items: flex-start;
 }

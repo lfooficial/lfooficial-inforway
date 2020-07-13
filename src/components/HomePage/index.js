@@ -42,6 +42,7 @@ export default function HomePage() {
             <Wrapper>
                 <NavBar
                     status={deactive}
+                    activeMenu={(state) => activeMenu(state)}
                 />
                 <Main>
                     <RoutesMain />

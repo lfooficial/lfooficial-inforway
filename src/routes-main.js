@@ -1,6 +1,7 @@
 import React from 'react'
 
-import Home from './components/Home'
+import PageHome from './components/PageHome'
+import PageConverageArea from './components/PageConverageArea'
 
 import {
     Switch,
@@ -12,7 +13,7 @@ export default function RoutesMain(){
     let { path } = useRouteMatch();
     return (
         <Switch>
-            <Route path={path} component={Home}/>
+            <Route exact path={path} component={PageHome}/>
         </Switch>
     )
 }
