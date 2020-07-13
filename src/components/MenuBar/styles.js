@@ -29,10 +29,6 @@ export const MenusLink = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 8px min(46px, max(10vw, 10px));
-  p{
-      display: none;
-
-  }
   @media(min-width: 500px){
       &:first-child{
           margin-left: 10px;
@@ -45,6 +41,9 @@ export const MenusLink = styled.div`
 
 
 export const MenuLink = styled.div`
+p{
+    display: none;
+}
 @media(min-width: 500px){
     &:first-child{
         display: none;
@@ -56,8 +55,8 @@ export const MenuLink = styled.div`
 
     p{
       display: inline;
-      color: var(--site);
-      font-size: calc(30px - 0.5vw);
+      color: var(--black);
+      font-size: 13px;
       margin-left: 4px;
     }
     cursor: pointer;
@@ -71,12 +70,23 @@ export const MenuLink = styled.div`
         }
     }
 }
+@media(min-width: 750px){
+    p{font-size: 18px;}
+}
+
+@media(min-width: 1000px){
+    p{font-size: 25px;}
+}
 `;
 
 const iconCSS = css`
   width: 25px;
   height: 25px;
-  fill: var(--site);
+  fill: var(--black);
+  &:hover,
+    &.active {
+        fill: var(--site-dark-hover);
+    }
 `;
 export const MenuIcon = styled(Menu)`${iconCSS}`
 

@@ -16,6 +16,7 @@ export default createGlobalStyle`
       max-width: 100vw;
       height: 100%;
       width: 100%;
+      font-size: 62.5%;
     }
 
     *, button, input{
