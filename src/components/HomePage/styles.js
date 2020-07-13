@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   @media(min-width: 500px){
-      margin-top: 42px;
+      margin-top: 152px;
   }
 `
 
@@ -22,7 +22,7 @@ export const Main = styled.div`
   
   width: min(601px, 100%);
   @media (min-width: 500px) {
-    border-left: 1px solid var(--outline);
-    border-right: 1px solid var(--outline);
+    border-left: 1px solid var(--gray);
+    border-right: 1px solid var(--gray);
   }
 `

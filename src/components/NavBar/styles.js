@@ -79,11 +79,7 @@ border-radius: 25px;
 `
 
 
-export const BotSide = styled.div`
-margin-top: 20px;
-display:  flex;
-align-items: center;
-`
+
 
 const iconCSS = css`
 flex-shrink: 0;
@@ -95,6 +91,12 @@ color: var(--black);
 export const PackIcon = styled(PackageIcon)`${iconCSS}`
     
 export const AntenaIcon = styled(SettingsInputAntenna)`${iconCSS}`
+
+export const BotSide = styled.div`
+margin-top: 20px;
+display:  flex;
+align-items: center;
+`
     
 export const ArrowLeftIcon = styled(ArrowLeft)`
 display: none;
@@ -102,12 +104,12 @@ display: none;
   display: inline-block;
   width: 25px;
   height: 25px;
-  color: var(--white);
+  color: var(--black);
   margin-left: 30px;
   cursor: pointer;
   &:hover{
     >path{
-      color: var(--like);
+      color: var(--site);
     }
   }
 }

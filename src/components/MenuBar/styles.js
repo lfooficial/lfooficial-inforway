@@ -5,7 +5,8 @@ import {
     BookOpen,
     Chat,
     User,
-    Menu
+    Menu,
+    ArrowLeft
 } from '../../styles/Icon'
 
 export const Container = styled.div`
@@ -18,7 +19,8 @@ export const Container = styled.div`
   z-index: 2;
   background: var(--whiteGround);
   width: 100%;
-  border-top: 1px solid var(--outline);
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
   @media(min-width: 500px){
       bottom: unset;
       top: 110px;
@@ -38,12 +40,24 @@ export const MenusLink = styled.div`
       }
   }
 `
+export const Menus = styled.div`
+button.active {
+    display: ${props => props.inline[0] ? "inline-block": "none"};
+}
 
+button.deactive {
+    display: ${props => props.inline[1] ? "inline-block": "none"};
+}
+`
 
 export const MenuLink = styled.div`
+
+
 p{
     display: none;
 }
+
+
 @media(min-width: 500px){
     &:first-child{
         display: none;
@@ -88,7 +102,13 @@ const iconCSS = css`
         fill: var(--site-dark-hover);
     }
 `;
-export const MenuIcon = styled(Menu)`${iconCSS}`
+export const MenuIcon = styled(Menu)`
+${iconCSS}
+`
+
+export const ArrowLeftIcon = styled(ArrowLeft)`
+${iconCSS}
+`
 
 export const HomeIcon = styled(Home)`${iconCSS}`
 
