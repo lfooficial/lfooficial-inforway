@@ -31,8 +31,8 @@ export default createGlobalStyle`
       --outline: #2F3336;
       --retweet: #00C06B;
       --red: #E8265E;
-      --site: #1766AE;
-      --site-dark-hover: #011017;
-      --site-light-hover: #2C8ED6;
+      --site: #00e676;
+      --site-dark-hover: #00b248;
+      --site-light-hover: #66ffa6;
     }
 `;

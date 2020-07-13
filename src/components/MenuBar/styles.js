@@ -2,8 +2,9 @@ import styled, { css } from 'styled-components'
 
 import {
     Home,
-    Notifications,
+    BookOpen,
     Chat,
+    User
 } from '../../styles/Icon'
 
 export const Container = styled.div`
@@ -33,10 +34,10 @@ export const MenusLink = styled.div`
   }
   @media(min-width: 500px){
       &:first-child{
-          margin-left: 50px;
+          margin-left: 10px;
       }
       &:last-child{
-          margin-right: 50px;
+          margin-right: 10px;
       }
   }
 `
@@ -45,12 +46,14 @@ export const MenusLink = styled.div`
 export const MenuLink = styled.div`
 @media(min-width: 500px){
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     p{
       display: inline;
       color: var(--site);
+      font-size: calc(30px - 0.5vw);
+      margin-left: 4px;
     }
     cursor: pointer;
     &:hover,
@@ -73,11 +76,8 @@ const iconCSS = css`
 
 export const HomeIcon = styled(Home)`${iconCSS}`
 
-
-export const PlanosIcon = styled(Notifications)`${iconCSS}`
-
+export const PlanosIcon = styled(BookOpen)`${iconCSS}`
 
 export const ChatIcon = styled(Chat)`${iconCSS}`
 
-
-export const AreaUserIcon = styled(Home)`${iconCSS}`
+export const AreaUserIcon = styled(User)`${iconCSS}`
