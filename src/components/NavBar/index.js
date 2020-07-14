@@ -5,6 +5,8 @@ import {
     Container,
     TopSide,
     MenuButton,
+    HomeIcon,
+    ChatIcon,
     PackIcon,
     AntenaIcon,
 } from './styles'
@@ -19,11 +21,31 @@ export default function NavBar(props) {
                 <button>
                     <Link to={url}>
                         <MenuButton status={props.status}>
+                            <HomeIcon />
+                            <span>Página Inicial</span>
+                        </MenuButton>
+                    </Link>
+                </button>
+
+                <button>
+                    <Link to={url}>
+                        <MenuButton status={props.status}>
                             <PackIcon />
                             <span>Planos de Acesso</span>
                         </MenuButton>
                     </Link>
                 </button>
+
+                <button>
+                    <Link to={url}>
+                        <MenuButton status={props.status}>
+                            <ChatIcon />
+                            <span>Atendimento</span>
+                        </MenuButton>
+                    </Link>
+                </button>
+
+
 
                 <button onClick={props.activeMenu}>
                     <Link>
@@ -33,6 +55,8 @@ export default function NavBar(props) {
                         </MenuButton>
                     </Link>
                 </button>
+
+
 
             </TopSide>
         </Container>

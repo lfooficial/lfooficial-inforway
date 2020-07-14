@@ -3,6 +3,11 @@ import {
     Container,
     Head,
     Logo,
+    SearchWrapper,
+    SearchInput,
+    SearchIcon,
+    MenuLink,
+    AreaUserIcon,
     } from './styles'
 
 export default function Header() {
@@ -13,6 +18,14 @@ export default function Header() {
                 <img src="http://www.inforwaynet.com.br/mkfiles/logo.jpg" alt="" />
                 </Logo>
             </Head>
+            <SearchWrapper>
+                <SearchInput placeholder="buscar na inforway" />
+                <SearchIcon />
+                <a href=""><MenuLink>
+                    <AreaUserIcon />
+                    <p>ÁREA DO CLIENTE</p>
+                </MenuLink></a>
+            </SearchWrapper>
         </Container>
     )
 }

@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components'
 import {
+    Home,
+    Chat,
     PackageIcon,
     SettingsInputAntenna
 } from '../../styles/Icon'
@@ -90,3 +92,9 @@ color: var(--black);
 export const PackIcon = styled(PackageIcon)`${iconCSS}`
 
 export const AntenaIcon = styled(SettingsInputAntenna)`${iconCSS}`
+
+export const HomeIcon = styled(Home)`${iconCSS}`
+    
+export const ChatIcon = styled(Chat)`${iconCSS}`
+    
+    

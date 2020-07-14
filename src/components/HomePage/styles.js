@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   position: relative;
   @media(min-width: 500px){
-      margin-top: 152px;
+      margin-top: 110px;
   }
 `
 

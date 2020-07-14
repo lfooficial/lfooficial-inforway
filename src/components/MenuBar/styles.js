@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 
 import {
     Home,
-    BookOpen,
+    PackageIcon,
     Chat,
     User,
     Menu,
@@ -24,6 +24,7 @@ export const Container = styled.div`
   @media(min-width: 500px){
       bottom: unset;
       top: 110px;
+      display: none;
   }
 `
 
@@ -112,7 +113,7 @@ ${iconCSS}
 
 export const HomeIcon = styled(Home)`${iconCSS}`
 
-export const PlanosIcon = styled(BookOpen)`${iconCSS}`
+export const PlanosIcon = styled(PackageIcon)`${iconCSS}`
 
 export const ChatIcon = styled(Chat)`${iconCSS}`
 
