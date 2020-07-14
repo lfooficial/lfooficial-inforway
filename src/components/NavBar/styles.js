@@ -16,16 +16,19 @@ export const Container = styled.div`
   left: 0;
   z-index: 1;
   padding: 9px 19px 20px;
-  max-height: 100vh;
-  overflow-y: auto; 
+  
+  
   background: var(--whiteGround);
 @media(min-width: 500px){
-    width: unset;
+  width: unset;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: sticky;
   top: 0;
-  left: 0;
-  z-index: unset;
+  padding: 9px 19px 20px;
+  max-height: 100vh;
+  overflow-y: auto; 
 }
 `
 
@@ -33,7 +36,6 @@ export const Container = styled.div`
 export const TopSide = styled.div`
 display: flex;
 flex-direction: column;
-align-items: center;
 align-items: flex-start;
 a{
   text-decoration: none;
@@ -96,5 +98,3 @@ export const AntenaIcon = styled(SettingsInputAntenna)`${iconCSS}`
 export const HomeIcon = styled(Home)`${iconCSS}`
     
 export const ChatIcon = styled(Chat)`${iconCSS}`
-    
-    

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import PageHome from './components/PageHome'
-import PageConverageArea from './components/PageConverageArea'
+import PageHome from './components/PageHome'/* 
+import PageConverageArea from './components/PageConverageArea' */
 
 import {
     Switch,

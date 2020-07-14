@@ -17,12 +17,13 @@ export const Wrapper = styled.div`
 
 export const Main = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   background: var(--whiteGround);
-  
+  margin-top: 110px;
   width: min(601px, 100%);
   @media (min-width: 500px) {
+    margin-top: unset;
     border-left: 1px solid var(--gray);
     border-right: 1px solid var(--gray);
   }

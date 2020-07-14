@@ -1,6 +1,8 @@
 import {createGlobalStyle} from "styled-components";
 
 export default createGlobalStyle`
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
     *{
       margin: 0;
       padding: 0;
@@ -16,7 +18,7 @@ export default createGlobalStyle`
       max-width: 100vw;
       height: 100%;
       width: 100%;
-      font-size: 62.5%;
+      font-family: 'Roboto', sans-serif;
     }
 
     *, button, input{

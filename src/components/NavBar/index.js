@@ -1,4 +1,6 @@
 import React from 'react'
+import StickyBox from 'react-sticky-box'
+
 import { useRouteMatch, Link } from 'react-router-dom'
 
 import {
@@ -16,7 +18,9 @@ export default function NavBar(props) {
     let { url } = useRouteMatch()
 
     return (
+        
         <Container status={props.status}>
+            <StickyBox>
             <TopSide>
                 <button>
                     <Link to={url}>
@@ -55,10 +59,9 @@ export default function NavBar(props) {
                         </MenuButton>
                     </Link>
                 </button>
-
-
-
             </TopSide>
+            </StickyBox>
         </Container>
+        
     )
 }

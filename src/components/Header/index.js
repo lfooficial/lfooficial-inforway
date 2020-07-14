@@ -21,7 +21,7 @@ export default function Header() {
             <SearchWrapper>
                 <SearchInput placeholder="buscar na inforway" />
                 <SearchIcon />
-                <a href=""><MenuLink>
+                <a href="http://www.inforwaynet.com.br/central/login.php"><MenuLink>
                     <AreaUserIcon />
                     <p>ÁREA DO CLIENTE</p>
                 </MenuLink></a>
