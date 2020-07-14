@@ -16,7 +16,7 @@ display: none;
 export const SearchWrapper = styled.div`
   padding: 10px 24px;
   width: min(399px, 100%);
-  position: relative;
+  position: absolute;
   top: 0;
   z-index: 1;
   max-height: 57px;
@@ -29,12 +29,11 @@ export const SearchInput = styled.input`
   padding: 0 10px  0 52px;
   border-radius:  19.5px;
   background: var(--site-light-hover);
-  
   &::placeholder{
     color: var(--black);
   }
   z-index: 1;
-transition: 180ms ease-in-out;
+  transition: 180ms ease-in-out;
   outline: 0;
   &:focus{
     border: 1px solid var(--site);
@@ -45,9 +44,12 @@ transition: 180ms ease-in-out;
 `;
   
 export const SearchIcon = styled(Search)`
+position: absolute;
+top: 17px;
+left: 33px;
 width: 27px;
 height: 27px;
-fill: var(--gray);
+fill: var(--black);
 `;
   
 export const Body = styled.div`

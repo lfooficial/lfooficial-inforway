@@ -13,12 +13,11 @@ export default function SideBar() {
     return (
         <Container>
             <SearchWrapper>
-                <SearchInput placeholder="buscar no twitter" />
+                <SearchInput placeholder="buscar na inforway" />
                 <SearchIcon />
             </SearchWrapper>
             <StickyBox>
                 <Body>
-
 
                 </Body>
             </StickyBox>
